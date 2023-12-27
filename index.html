@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maditaion site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Maditation sounds</h1>
+     <!-- There is main container that have both the buttons div that will have video in the background that will 
+        play when you hover it. Each button will have different text in it and will make the sound accordingly by
+         keyboard or mouse click.The television div will have video of a meditation guide that will play in the
+        moment the sound ends. It also have close button so that if you have enough from the guide you can close it-->
+    <div class="main-container">
+        <div class="buttons">
+            <!-- All the buttons are in the same class so in the java script i will know how to contact them-->
+            <button class="w wild maditate">
+                <video src="./videos/wild.mp4" class="video-button" muted></video>wild</button>
+            <button class="b beach maditate">
+                <video src="./videos/beach.mp4" class="video-button" muted></video>beach</button>
+            <button class="s storm maditate">
+                <video src="./videos/storm.mp4" class="video-button" muted></video>storm</button>
+            <button class="d desert maditate">
+                <video src="./videos/desert.mp4" class="video-button" muted></video>desert</button>
+            <button class="r rain maditate">
+                <video src="./videos/rain.mp4" class="video-button" muted></video>rain</button>
+            <button class="c space maditate">
+                <video src="./videos/space.mp4" class="video-button" muted></video>space</button>
+            <button class="I illusion maditate">
+                <video src="./videos/illusion.mp4" class="video-button" muted></video>illusion</button>
+        </div>
+        <div class="video-container">
+        <!-- The television have video and close button inside it, the button will
+        be on the video-->
+        <div class="television">
+            <button id="closeButton">X</button>
+            <video id="videoplayer" controls src="./videos/meditaion guide.mp4"></video>
+        </div>
+       </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
